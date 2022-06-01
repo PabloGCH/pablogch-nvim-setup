@@ -2,6 +2,7 @@
 call plug#begin()
 	"Theme
 	Plug 'Shatur/neovim-ayu'
+	Plug 'navarasu/onedark.nvim'
 	"nvim-lspconfig
 	Plug 'neovim/nvim-lspconfig'
 	"nvim-cmp
@@ -18,13 +19,14 @@ call plug#begin()
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'kyazdani42/nvim-tree.lua'
+	Plug 'lukas-reineke/indent-blankline.nvim'
 	"barbar tabars
 	Plug 'romgrk/barbar.nvim'
 call plug#end()
 "Theme
 source $HOME/.config/nvim/theme.vim
 "Set theme
-colorscheme ayu-dark
+colorscheme onedark
 "Plugin config
 source $HOME/.config/nvim/lualine.vim
 source $HOME/.config/nvim/nvim-tree.vim
@@ -35,10 +37,13 @@ source $HOME/.config/nvim/barbar.vim
 set mouse=a
 set number
 set encoding=UTF-8
+set listchars=tab:\|\ 
+set list
 
 " Mapping
 tnoremap <Esc> <C-\><C-n>
 nnoremap <M-a> :term<CR>
+nnoremap <M-d> :qa!<CR>
 
 " Starting commands
 function StartCommands()
