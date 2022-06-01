@@ -45,6 +45,7 @@ lua << EOF
     local project_library_path = vim.fn.getcwd() .. "/node_modules"
     local cmd = {"ngserver", "--stdio", "--tsProbeLocations", project_library_path , "--ngProbeLocations", project_library_path}
     local caps = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+    -- angular
     require('lspconfig').angularls.setup {
 	cmd = cmd,
   	on_new_config = function(new_config,new_root_dir)
@@ -53,4 +54,15 @@ lua << EOF
 	on_attach = on_attach,
 	capabilities = caps
     }
+    -- typescript and javascript
+    require'lspconfig'.tsserver.setup{}
+    -- css
+    require'lspconfig'.cssls.setup{
+	capabilities = caps
+    }
+    -- html
+    require'lspconfig'.html.setup{
+	capabilities = caps
+    }
+
 EOF
