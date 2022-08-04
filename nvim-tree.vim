@@ -9,9 +9,6 @@ lua << EOF
 	 override = {
 	  zsh = {
 	    icon = "",
-	    color = "#428850",
-	    cterm_color = "65",
-	    name = "Zsh"
 	  }
 	 };
 	 -- globally enable default icons (default to false)

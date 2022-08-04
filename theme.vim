@@ -4,6 +4,5 @@ lua << EOF
 		overrides = {},
 	})
 	require('onedark').setup {
-	    style = 'darker',
 	}
 EOF

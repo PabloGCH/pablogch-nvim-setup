@@ -15,6 +15,8 @@ call plug#begin()
 	Plug 'hrsh7th/vim-vsnip'
 	"lualine
 	Plug 'nvim-lualine/lualine.nvim'
+	" transparency
+	Plug 'xiyaowong/nvim-transparent'
 	"nvim-tree
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'kyazdani42/nvim-web-devicons'
@@ -33,6 +35,8 @@ source $HOME/.config/nvim/nvim-tree.vim
 source $HOME/.config/nvim/nvim-cmp.vim
 source $HOME/.config/nvim/barbar.vim
 
+highlight VertSplit cterm=NONE
+
 " Options
 set mouse=a
 set number
@@ -44,6 +48,7 @@ set list
 tnoremap <Esc> <C-\><C-n>
 nnoremap <M-a> :term<CR>
 nnoremap <M-d> :qa!<CR>
+
 
 " Starting commands
 function StartCommands()
