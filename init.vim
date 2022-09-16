@@ -48,7 +48,7 @@ set list
 tnoremap <Esc> <C-\><C-n>
 nnoremap <M-a> :term<CR>
 nnoremap <M-d> :qa!<CR>
-
+nnoremap <C-s> :w<CR>
 
 " Starting commands
 function StartCommands()
