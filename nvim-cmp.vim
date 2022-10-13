@@ -45,8 +45,9 @@ lua << EOF
     local project_library_path = vim.fn.getcwd() .. "/node_modules"
     local cmd = {"ngserver", "--stdio", "--tsProbeLocations", project_library_path , "--ngProbeLocations", project_library_path}
     local caps = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+    local lsp = require('lspconfig')
     -- angular
-    require('lspconfig').angularls.setup {
+    lsp.angularls.setup {
 	cmd = cmd,
   	on_new_config = function(new_config,new_root_dir)
     		new_config.cmd = cmd
@@ -55,13 +56,32 @@ lua << EOF
 	capabilities = caps
     }
     -- typescript and javascript
-    require'lspconfig'.tsserver.setup{}
+    lsp.tsserver.setup{}
+    -- Rust
+	require("rust-tools").setup({
+		tools = {
+			autoSetHints = true,
+			inlay_hints = {
+				show_parameter_hints = false,
+				parameter_hints_prefix = "",
+				other_hints_prefix = ""
+			}
+		},
+		server = {
+			["rust-analizer"] = {
+				checkOnSave = {
+					command = "clippy"
+				}
+			}
+
+		}
+	})
     -- css
-    require'lspconfig'.cssls.setup{
+    lsp.cssls.setup{
 	capabilities = caps
     }
     -- html
-    require'lspconfig'.html.setup{
+    lsp.html.setup{
 	capabilities = caps
     }
 

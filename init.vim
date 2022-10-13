@@ -24,6 +24,8 @@ call plug#begin()
 	Plug 'lukas-reineke/indent-blankline.nvim'
 	"barbar tabars
 	Plug 'romgrk/barbar.nvim'
+	"For rust capabilities
+	Plug 'simrat39/rust-tools.nvim'
 call plug#end()
 "Theme
 source $HOME/.config/nvim/theme.vim
