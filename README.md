@@ -7,13 +7,16 @@ Es necesario instalar:
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 - angular language service:
 
-		npm install -g @angular/language-server
+		sudo npm install -g @angular/language-server
 - typescript language service:
 
-		npm install -g typescript typescript-language-server
+		sudo npm install -g typescript typescript-language-server
 - css y html language service:
+```bash
+		sudo npm i -g vscode-langservers-extracted
+```
+- rust analyzer
 
-		npm i -g vscode-langservers-extracted
 Antes de empezar:
 
 - nvim deberia ejecutar comando:
