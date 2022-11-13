@@ -1,6 +1,14 @@
-- Este repo debe ser clonado con el nombre de "nvim" en la direccion "/.config"
+CONFIGURACION DE NEOVIM
+========================
+
+SETUP
+------------------------------
+
+Este repo debe ser clonado con el nombre de "nvim" en la direccion "/.config"
 De modo que la configuracion se encuentre en /.config/nvim
 
+INSTRUCCIONES:
+------------------------------
 Es necesario instalar:
 
 - Neovim
