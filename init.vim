@@ -18,8 +18,6 @@ call plug#begin()
 	Plug 'hrsh7th/vim-vsnip'
 	"lualine
 	Plug 'nvim-lualine/lualine.nvim'
-	" transparency
-	Plug 'xiyaowong/nvim-transparent'
 	"nvim-tree
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'kyazdani42/nvim-web-devicons'
@@ -38,9 +36,9 @@ source $HOME/.config/nvim/theme.vim
 colorscheme material
 " Options
 set mouse=a
-set cursorline
 set termguicolors
 set number
+set cursorline
 set encoding=UTF-8
 set listchars=tab:\|\ 
 set list

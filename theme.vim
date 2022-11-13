@@ -6,14 +6,12 @@ overrides = {},
 })
 require('onedark').setup({
 	style = 'darker'
-})
-require('material').setup({
-
+}) require('material').setup({
 	contrast = {
 		terminal = false, -- Enable contrast for the built-in terminal
 		sidebars = false, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
 		floating_windows = false, -- Enable contrast for floating windows
-		cursor_line = false, -- Enable darker background for the cursor line
+		cursor_line = true, -- Enable darker background for the cursor line
 		non_current_windows = false, -- Enable darker background for non-current windows
 		filetypes = {}, -- Specify which filetypes get the contrasted (darker) background
 	},
@@ -51,14 +49,14 @@ require('material').setup({
 	disable = {
 		colored_cursor = false, -- Disable the colored cursor
 		borders = false, -- Disable borders between verticaly split windows
-		background = false, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
+		background = true, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
 		term_colors = false, -- Prevent the theme from setting terminal colors
 		eob_lines = false-- Hide the end-of-buffer lines
 	},
 
 	high_visibility = {
 		lighter = false, -- Enable higher contrast text for lighter style
-		darker = true-- Enable higher contrast text for darker style
+		darker = false-- Enable higher contrast text for darker style
 	},
 
 	lualine_style = "stealth", -- Lualine style ( can be 'stealth' or 'default' )
@@ -67,7 +65,9 @@ require('material').setup({
 
 	custom_colors = nil, -- If you want to everride the default colors, set this to a function
 
-	custom_highlights = {}, -- Overwrite highlights with your own
+	custom_highlights = {
+		CursorLine = { bg = "#222944" },
+	}, -- Overwrite highlights with your own
 })
 vim.g.material_style = "deep ocean"
 EOF
