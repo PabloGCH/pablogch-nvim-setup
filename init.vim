@@ -36,6 +36,13 @@ call plug#end()
 source $HOME/.config/nvim/theme.vim
 "Set theme
 colorscheme material
+" Options
+set mouse=a
+set termguicolors
+set number
+set encoding=UTF-8
+set listchars=tab:\|\ 
+set list
 "Plugin config
 source $HOME/.config/nvim/lualine.vim
 source $HOME/.config/nvim/nvim-tree.vim
@@ -46,13 +53,7 @@ source $HOME/.config/nvim/treesitter.vim
 
 highlight VertSplit cterm=NONE
 
-" Options
-set mouse=a
-set termguicolors
-set number
-set encoding=UTF-8
-set listchars=tab:\|\ 
-set list
+
 
 " Mapping
 tnoremap <Esc> <C-\><C-n>

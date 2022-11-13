@@ -5,7 +5,7 @@ nnoremap <silent>    <A-h> :BufferLineCyclePrev<CR>
 nnoremap <silent>    <A-<> :BufferLineMovePrev<CR>
 nnoremap <silent>    <A->> :BufferLineMoveNext<CR>
 " Close buffer
-nnoremap <silent>    <A-c> :Bdelete<CR>
+nnoremap <silent>    <A-c> :Bdelete!<CR>
 
 
 nnoremap <silent>    <A-1> :lua require("bufferline").go_to_buffer(1, true)<CR>
@@ -30,6 +30,10 @@ require("bufferline").setup{
 				separator = true
 			}   
 		}
-	}
+
+	},
+
 }
+
 EOF
+
