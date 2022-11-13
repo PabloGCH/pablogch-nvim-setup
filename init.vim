@@ -28,7 +28,6 @@ call plug#begin()
 	"tab bars
 	Plug 'moll/vim-bbye'
 	Plug 'akinsho/bufferline.nvim'
-	"Plug 'romgrk/barbar.nvim'
 	"For rust capabilities
 	Plug 'simrat39/rust-tools.nvim'
 call plug#end()
@@ -41,7 +40,6 @@ colorscheme material
 source $HOME/.config/nvim/lualine.vim
 source $HOME/.config/nvim/nvim-tree.vim
 source $HOME/.config/nvim/nvim-cmp.vim
-"source $HOME/.config/nvim/barbar.vim
 source $HOME/.config/nvim/bufferline.vim
 source $HOME/.config/nvim/treesitter.vim
 
