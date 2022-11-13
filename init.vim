@@ -3,8 +3,11 @@ call plug#begin()
 	"Theme
 	Plug 'Shatur/neovim-ayu'
 	Plug 'navarasu/onedark.nvim'
+	Plug 'marko-cerovac/material.nvim'
 	"nvim-lspconfig
 	Plug 'neovim/nvim-lspconfig'
+	"treesitter for highlight
+	Plug 'nvim-treesitter/nvim-treesitter'
 	"nvim-cmp
 	Plug 'hrsh7th/cmp-nvim-lsp'
 	Plug 'hrsh7th/cmp-buffer'
@@ -27,15 +30,18 @@ call plug#begin()
 	"For rust capabilities
 	Plug 'simrat39/rust-tools.nvim'
 call plug#end()
+
 "Theme
 source $HOME/.config/nvim/theme.vim
 "Set theme
-colorscheme onedark
+colorscheme material
 "Plugin config
 source $HOME/.config/nvim/lualine.vim
 source $HOME/.config/nvim/nvim-tree.vim
 source $HOME/.config/nvim/nvim-cmp.vim
 source $HOME/.config/nvim/barbar.vim
+source $HOME/.config/nvim/treesitter.vim
+
 
 highlight VertSplit cterm=NONE
 

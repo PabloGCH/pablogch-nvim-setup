@@ -1,6 +1,7 @@
 lua << END
 	require('lualine').setup {
-		options = { theme = 'auto'},
+		options = { theme = 'material-stealth'},
 		extensions = {'nvim-tree'},
+
 	}
 END
