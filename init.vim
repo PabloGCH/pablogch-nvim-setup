@@ -38,6 +38,7 @@ source $HOME/.config/nvim/theme.vim
 colorscheme material
 " Options
 set mouse=a
+set cursorline
 set termguicolors
 set number
 set encoding=UTF-8
