@@ -66,7 +66,7 @@ require('onedark').setup({
 	custom_colors = nil, -- If you want to everride the default colors, set this to a function
 
 	custom_highlights = {
-		CursorLine = { bg = "#222944" },
+		CursorLine = { bg = "#181c2f" },
 	}, -- Overwrite highlights with your own
 })
 vim.g.material_style = "deep ocean"
