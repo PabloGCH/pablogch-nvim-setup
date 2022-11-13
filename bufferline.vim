@@ -28,7 +28,7 @@ require("bufferline").setup{
 				filetype = "NvimTree",
 				text = "",
 				text_align = "center",
-				separator = true,
+				separator = false,
 			}   
 		},
 		separator_style = {"",""}

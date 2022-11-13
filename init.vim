@@ -42,6 +42,7 @@ set cursorline
 set encoding=UTF-8
 set listchars=tab:\|\ 
 set list
+set fillchars+=vert:\ 
 "Plugin config
 source $HOME/.config/nvim/lualine.vim
 source $HOME/.config/nvim/nvim-tree.vim
