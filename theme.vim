@@ -51,7 +51,7 @@ require('onedark').setup({
 		borders = false, -- Disable borders between verticaly split windows
 		background = true, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
 		term_colors = false, -- Prevent the theme from setting terminal colors
-		eob_lines = false-- Hide the end-of-buffer lines
+		eob_lines = true-- Hide the end-of-buffer lines
 	},
 
 	high_visibility = {
@@ -64,7 +64,7 @@ require('onedark').setup({
 	async_loading = true, -- Load parts of the theme asyncronously for faster startup (turned on by default)
 
 	custom_colors = nil, -- If you want to everride the default colors, set this to a function
-
+	
 	custom_highlights = {
 		CursorLine = { bg = "#181c2f" },
 	}, -- Overwrite highlights with your own

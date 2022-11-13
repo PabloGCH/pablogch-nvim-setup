@@ -28,11 +28,16 @@ require("bufferline").setup{
 				filetype = "NvimTree",
 				text = "",
 				text_align = "center",
-				separator = true
+				separator = true,
 			}   
-		}
-
+		},
+		separator_style = {"",""}
 	},
+	highlights = {
+		offset_separator = {
+		    fg = "#232637",
+		},
+	}
 
 }
 
