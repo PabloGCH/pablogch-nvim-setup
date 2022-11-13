@@ -6,7 +6,7 @@ nnoremap <silent>    <A-l> :BufferNext<CR>
 nnoremap <silent>    <A-<> :BufferMovePrevious<CR>
 nnoremap <silent>    <A->> :BufferMoveNext<CR>
 " Goto buffer in position...
-nnoremap <silent>    <A-1> :BufferGoto 1<CR>
+nnoremap <silent>    <A-1> lua require("bufferline").go_to_buffer(1, true)<CR>
 nnoremap <silent>    <A-2> :BufferGoto 2<CR>
 nnoremap <silent>    <A-3> :BufferGoto 3<CR>
 nnoremap <silent>    <A-4> :BufferGoto 4<CR>
@@ -29,12 +29,18 @@ let bufferline.closable = v:false
 lua << EOF
 	local nvim_tree_events = require('nvim-tree.events')
 	local bufferline_state = require('bufferline.state')
-
+	require'bufferline'.setup {
+		animation = true,
+		tabpages = true,
+		closable = false,
+		no_name_title = "[buffer]",
+	}
 	nvim_tree_events.on_tree_open(function ()
-	  bufferline_state.set_offset(31, "")
+	  bufferline_state.set_offset(31, "File Tree")
 	end)
 
 	nvim_tree_events.on_tree_close(function ()
 	  bufferline_state.set_offset(0)
 	end)
+
 EOF

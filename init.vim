@@ -25,8 +25,10 @@ call plug#begin()
 	Plug 'kyazdani42/nvim-web-devicons'
 	Plug 'kyazdani42/nvim-tree.lua'
 	Plug 'lukas-reineke/indent-blankline.nvim'
-	"barbar tabars
-	Plug 'romgrk/barbar.nvim'
+	"tab bars
+	Plug 'moll/vim-bbye'
+	Plug 'akinsho/bufferline.nvim'
+	"Plug 'romgrk/barbar.nvim'
 	"For rust capabilities
 	Plug 'simrat39/rust-tools.nvim'
 call plug#end()
@@ -39,7 +41,8 @@ colorscheme material
 source $HOME/.config/nvim/lualine.vim
 source $HOME/.config/nvim/nvim-tree.vim
 source $HOME/.config/nvim/nvim-cmp.vim
-source $HOME/.config/nvim/barbar.vim
+"source $HOME/.config/nvim/barbar.vim
+source $HOME/.config/nvim/bufferline.vim
 source $HOME/.config/nvim/treesitter.vim
 
 
@@ -47,6 +50,7 @@ highlight VertSplit cterm=NONE
 
 " Options
 set mouse=a
+set termguicolors
 set number
 set encoding=UTF-8
 set listchars=tab:\|\ 
