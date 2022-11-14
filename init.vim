@@ -6,8 +6,12 @@ call plug#begin()
 	Plug 'marko-cerovac/material.nvim'
 	"nvim-lspconfig
 	Plug 'neovim/nvim-lspconfig'
+	"smooth scrolling
+	Plug 'karb94/neoscroll.nvim'
 	"treesitter for highlight
 	Plug 'nvim-treesitter/nvim-treesitter'
+	"smoot scroll
+	Plug 'karb94/neoscroll.nvim'
 	"nvim-cmp
 	Plug 'hrsh7th/cmp-nvim-lsp'
 	Plug 'hrsh7th/cmp-buffer'
@@ -48,6 +52,7 @@ source $HOME/.config/nvim/lualine.vim
 source $HOME/.config/nvim/nvim-tree.vim
 source $HOME/.config/nvim/nvim-cmp.vim
 source $HOME/.config/nvim/bufferline.vim
+source $HOME/.config/nvim/smoothscroll.vim
 source $HOME/.config/nvim/treesitter.vim
 
 
