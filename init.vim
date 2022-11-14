@@ -47,6 +47,8 @@ set encoding=UTF-8
 set listchars=tab:\|\ 
 set list
 set fillchars+=vert:\ 
+set sidescroll=1
+set nowrap
 "Plugin config
 source $HOME/.config/nvim/lualine.vim
 source $HOME/.config/nvim/nvim-tree.vim
