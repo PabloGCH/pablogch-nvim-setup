@@ -48,7 +48,8 @@ set listchars=tab:\|\
 set list
 set fillchars+=vert:\ 
 set sidescroll=1
-set nowrap
+set wrap
+set breakindent
 "Plugin config
 source $HOME/.config/nvim/lualine.vim
 source $HOME/.config/nvim/nvim-tree.vim
