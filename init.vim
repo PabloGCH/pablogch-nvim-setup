@@ -71,7 +71,7 @@ nnoremap <C-s> :w<CR>
 
 " Starting commands
 function StartCommands()
-	NvimTreeToggle
+"	NvimTreeToggle
 endfunction
 autocmd VimEnter * call StartCommands()
 autocmd TermOpen * setlocal nonumber norelativenumber
