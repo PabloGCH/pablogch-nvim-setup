@@ -6,6 +6,8 @@ hi CursorLine guibg=NONE
 hi StatusLineNC guibg=NONE
 hi NvimTreeStatusLine guibg=NONE
 hi NvimTreeCursorLine guibg=#352f2a
+hi NvimTreeFolderIcon guifg=#D7A570
+hi NvimTreeFolderName guifg=#D7A570
 
 "hi BufferLineFill guibg=NONE
 "hi BufferLineBufferSelected guibg=NONE

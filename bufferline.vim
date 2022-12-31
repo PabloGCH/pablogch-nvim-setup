@@ -31,7 +31,8 @@ require("bufferline").setup{
 				separator = false,
 			}   
 		},
-		separator_style = {"",""}
+		separator_style = {"",""},
+		show_close_icon = false
 	},
 	highlights = {
 		offset_separator = {
