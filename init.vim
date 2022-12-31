@@ -3,6 +3,7 @@ call plug#begin()
 	"Theme
 	Plug 'Shatur/neovim-ayu'
 	Plug 'navarasu/onedark.nvim'
+	Plug 'savq/melange'
 	Plug 'marko-cerovac/material.nvim'
 	"nvim-lspconfig
 	Plug 'neovim/nvim-lspconfig'
@@ -34,10 +35,8 @@ call plug#begin()
 	Plug 'simrat39/rust-tools.nvim'
 call plug#end()
 
-"Theme
-source $HOME/.config/nvim/theme.vim
-"Set theme
-colorscheme material
+
+
 " Options
 set mouse=a
 set termguicolors
@@ -57,6 +56,8 @@ source $HOME/.config/nvim/nvim-cmp.vim
 source $HOME/.config/nvim/bufferline.vim
 source $HOME/.config/nvim/smoothscroll.vim
 source $HOME/.config/nvim/treesitter.vim
+"Theme
+source $HOME/.config/nvim/theme.vim
 
 
 highlight VertSplit cterm=NONE
