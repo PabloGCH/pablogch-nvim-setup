@@ -52,14 +52,11 @@ require("bufferline").setup{
 		indicator_selected = {
 		    bg = "none",
 		    fg = "#D19557"
+		},
+		indicator_visible = {
+		    bg = "none",
 		}
-		
-		
-
-
 	}
-
 }
-
 EOF
 
