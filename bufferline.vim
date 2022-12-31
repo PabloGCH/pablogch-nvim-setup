@@ -35,8 +35,28 @@ require("bufferline").setup{
 	},
 	highlights = {
 		offset_separator = {
-		    fg = "#232637",
+		    bg = "none"
 		},
+		fill = {
+		    bg = "none"
+		},
+		background = {
+		    bg = "none"
+		},
+		buffer_selected = {
+		    bg = "none"
+		},
+		buffer_visible = {
+		    bg = "none"
+		},
+		indicator_selected = {
+		    bg = "none",
+		    fg = "#D19557"
+		}
+		
+		
+
+
 	}
 
 }
