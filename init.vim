@@ -1,4 +1,5 @@
 " Plugins
+
 call plug#begin()
 	"Theme
 	Plug 'Shatur/neovim-ayu'
@@ -37,6 +38,7 @@ call plug#end()
 
 
 
+
 " Options
 set mouse=a
 set termguicolors
@@ -48,7 +50,12 @@ set list
 set fillchars+=vert:\ 
 set sidescroll=1
 set wrap
+set clipboard=unnamedplus
 set breakindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 "Plugin config
 source $HOME/.config/nvim/lualine.vim
 source $HOME/.config/nvim/nvim-tree.vim
@@ -69,6 +76,7 @@ tnoremap <Esc> <C-\><C-n>
 nnoremap <M-a> :term<CR>
 nnoremap <M-d> :qa!<CR>
 nnoremap <C-s> :w<CR>
+
 
 " Starting commands
 function StartCommands()
