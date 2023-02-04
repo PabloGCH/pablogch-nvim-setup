@@ -56,6 +56,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+
 "Plugin config
 source $HOME/.config/nvim/lualine.vim
 source $HOME/.config/nvim/nvim-tree.vim
@@ -76,6 +77,8 @@ tnoremap <Esc> <C-\><C-n>
 nnoremap <M-a> :term<CR>
 nnoremap <M-d> :qa!<CR>
 nnoremap <C-s> :w<CR>
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
 
 
 " Starting commands
