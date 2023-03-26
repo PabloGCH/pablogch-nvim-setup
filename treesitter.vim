@@ -1,4 +1,5 @@
 lua << EOF
+--[[
 require'nvim-treesitter.configs'.setup {
 	-- A list of parser names, or "all"
 	ensure_installed = { "rust", "javascript", "typescript", "json", "css", "html", "lua", "vim" },
@@ -41,4 +42,5 @@ require'nvim-treesitter.configs'.setup {
 			additional_vim_regex_highlighting = true,
 	},
 }
+--]]
 EOF

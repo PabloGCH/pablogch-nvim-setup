@@ -1,4 +1,4 @@
-colorscheme melange
+colorscheme ayu
 
 
 hi Normal guibg=NONE
@@ -9,8 +9,8 @@ hi StatusLineNC guibg=NONE
 hi NvimTreeStatusLine guibg=NONE
 
 
-hi NvimTreeCursorLine guibg=#352f2a
-hi NvimTreeFolderIcon guifg=#D7A570
+"hi NvimTreeCursorLine guibg=#352f2a
+"hi NvimTreeFolderIcon guifg=#D7A570
 "hi NvimTreeFolderName guifg=#D7A570
 
 "BUFFERLINE TRANSPARENCY

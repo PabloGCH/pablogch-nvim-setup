@@ -4,7 +4,6 @@ call plug#begin()
 	"Theme
 	Plug 'Shatur/neovim-ayu'
 	Plug 'navarasu/onedark.nvim'
-	Plug 'savq/melange'
 	Plug 'marko-cerovac/material.nvim'
 	"nvim-lspconfig
 	Plug 'neovim/nvim-lspconfig'
@@ -42,7 +41,7 @@ call plug#end()
 " Options
 set mouse=a
 set termguicolors
-set number
+set number relativenumber
 set cursorline
 set encoding=UTF-8
 set listchars=tab:\|\ 
@@ -55,6 +54,7 @@ set breakindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent
 
 
 "Plugin config
@@ -86,4 +86,4 @@ function StartCommands()
 "	NvimTreeToggle
 endfunction
 autocmd VimEnter * call StartCommands()
-autocmd TermOpen * setlocal nonumber norelativenumber
+"autocmd TermOpen * setlocal nonumber norelativenumber
